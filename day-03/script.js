@@ -28,4 +28,29 @@ console.log(x); // 7
 x += 10; // x = x + 7; // 17;
 x -= 2; // x = x - 2; // 15;
 
+// Comparison Operator
+
+4 == 4; // true
+4 == 5; // false
+0 == false; // true
+0 === false; // false
+3 == "3"; // true
+3 === "3"; // false
+
+// javascript oject can't compair value compare reference
+const obj1 = { name: "Paul" };
+const obj2 = { name: "Paul" };
+console.log(obj1 === obj2);
+
+// Gater than operator
+4 > 3; // true
+7 > 9; // false
+4 >= 4; // true
+
+// Less than operator
+5 < 8; // true
+3 < 2; // false
+5 <= 5; // true
+
+// Logical operator 
 
