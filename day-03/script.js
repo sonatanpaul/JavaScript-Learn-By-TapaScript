@@ -74,9 +74,13 @@ console.log(!true); // false
 console.log(!false); // true
 
 // Nullish Coalescing Operator
-
 // Note : Only right side Null and undefined value they return right side value
 const c = undefined ?? 1; // 1
 const d = null ?? 2; // 2
 const e = "Paul" ?? 4; // Paul
 
+// Conditional Ternary Operator
+
+let age = 50;
+const result = age >= 40 ? "Senior" : "Non Senior";
+console.log(result); // Senior
