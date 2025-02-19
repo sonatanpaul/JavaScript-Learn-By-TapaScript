@@ -84,3 +84,15 @@ const e = "Paul" ?? 4; // Paul
 let age = 50;
 const result = age >= 40 ? "Senior" : "Non Senior";
 console.log(result); // Senior
+
+// Typeof Operator
+
+let name = "Paul";
+console.log(typeof name); // string
+let isPassed = true;
+console.log(isPassed); // boolean
+let MangoPrice = 120;
+console.log(typeof MangoPrice); // number
+let nulls = null;
+console.log(typeof nulls); // Object
+
