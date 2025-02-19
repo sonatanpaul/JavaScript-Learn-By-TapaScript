@@ -52,5 +52,31 @@ console.log(obj1 === obj2);
 3 < 2; // false
 5 <= 5; // true
 
-// Logical operator 
+// Logical Operator
+
+// Logical And Operator
+console.log(true && true); // true;
+console.log(true && false); // false;
+console.log(false && true); // false;
+console.log(false && false); // false;
+console.log("Cow" && "Horse"); // Horse;
+console.log([1] && [10]); // 10;
+
+// Logical Or Operator
+console.log(false || false); // false
+console.log(true || false); // true
+console.log(false || true); // true
+console.log(true || true); // true
+console.log("Cow" || "Horse"); // Cow
+
+// Logical Not Operator
+console.log(!true); // false
+console.log(!false); // true
+
+// Nullish Coalescing Operator
+
+// Note : Only right side Null and undefined value they return right side value
+const c = undefined ?? 1; // 1
+const d = null ?? 2; // 2
+const e = "Paul" ?? 4; // Paul
 
