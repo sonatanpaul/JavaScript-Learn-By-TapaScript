@@ -92,5 +92,21 @@ if (outerCondition1) {
 } else {
   console.log("Outer else");
 }
-
 // Ans : Outer else
+
+// Note : if condition alone executed but else condition alone not executed
+// Example : only if
+
+let isAlone = true;
+if (isAlone) {
+  console.log("I am alone if");
+}
+// Ans : I am alone if
+
+// =====================================
+
+// Example : Only else
+else {
+  console.log("I am alone else");
+}
+// Ans : Uncaught SyntaxError: Unexpected token 'else'
