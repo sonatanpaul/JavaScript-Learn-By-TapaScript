@@ -32,3 +32,65 @@ if (score >= 90) {
 } else {
   console.log("Fail");
 }
+
+let num = 0;
+
+// Option - 1
+if (num >= 0) {
+  console.log("Greater then 0");
+} // Ans : Greater then 0
+
+if (num === 0) {
+  console.log(0);
+} // Ans: 0
+
+if (num <= 0) {
+  console.log("Less then 0");
+} // Ans : Less then 0
+
+// Option - 2
+
+if (num === 0) {
+  console.log(0);
+} else if (num >= 0) {
+  console.log("Greater Then 0");
+} else if (num <= 0) {
+  console.log("Less then 0");
+} // Ans Only : 0
+
+// Nesting if Else
+
+const outerCondition = true;
+const innerCondition = false;
+
+if (outerCondition) {
+  console.log("Outer Condition if");
+  if (innerCondition) {
+    console.log("inner if");
+  } else {
+    console.log("inner else");
+  }
+} else {
+  console.log("Outer else");
+}
+
+// Ans: Outer Condition if
+// Ans : inner else
+
+// Option - 2
+
+const outerCondition1 = false;
+const innerCondition1 = true;
+
+if (outerCondition1) {
+  console.log("Outer Condition if");
+  if (innerCondition1) {
+    console.log("inner if");
+  } else {
+    console.log("inner else");
+  }
+} else {
+  console.log("Outer else");
+}
+
+// Ans : Outer else
