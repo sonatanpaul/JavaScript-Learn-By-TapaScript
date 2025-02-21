@@ -150,3 +150,13 @@ switch (name) {
 }
 
 // Ans: Backend Developer Win
+
+// Ternary Operator
+
+let isExamPassed = true;
+
+isExamPassed
+  ? console.log("Yes, I am Passed Exam")
+  : console.log("I am Fail the Exam");
+
+  
