@@ -110,3 +110,43 @@ else {
   console.log("I am alone else");
 }
 // Ans : Uncaught SyntaxError: Unexpected token 'else'
+
+// Switch Case :
+let day = 3;
+
+switch (day) {
+  case 1:
+    console.log("Friday");
+    break;
+  case 2:
+    console.log("Saturday");
+    break;
+  case 3:
+    console.log("Sunday");
+    break;
+  case 4:
+    console.log("Monday");
+    break;
+  default:
+    console.log("Number Day Invalid");
+}
+// Ans : Monday
+
+// Option - 2
+let name = "Java";
+
+switch (name) {
+  case "JavaScript":
+    console.log("JavaScript Win");
+    break;
+  case "React Js":
+    console.log("React Js Win");
+    break;
+  case "Next JS":
+    console.log("Next Js Win");
+    break;
+  default:
+    console.log("Backend Developer Win");
+}
+
+// Ans: Backend Developer Win
