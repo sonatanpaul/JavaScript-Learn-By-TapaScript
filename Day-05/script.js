@@ -102,3 +102,9 @@ for (let i = 1; i <= 5; i++) {
   if (i === 3) continue;
   console.log(i); // 1,2,4,5
 }
+
+// Multiple counter for single loop
+
+for (let i = 1, j = 10; i <= 10 && j >= 1; i++, j--) {
+  console.log(i, j);
+}
