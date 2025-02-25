@@ -67,9 +67,38 @@ for (let i = 1; i <= 100; i++) {
 console.log(sum2);
 
 // Nested Loop
-
 for (let i = 1; i <= 3; i++) {
   for (let j = 1; j <= 3; j++) {
     console.log("Row", i, "Col", j);
   }
+}
+
+// break and continue
+// Option - 1
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    break;
+  }
+  console.log(i);
+}
+
+// Option - 2
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) break;
+  console.log(i);
+}
+
+// Continue :
+// Option - 1;
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    continue;
+  }
+  console.log(i); // 1,2,4,5
+}
+
+// Option - 2
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) continue;
+  console.log(i); // 1,2,4,5
 }
