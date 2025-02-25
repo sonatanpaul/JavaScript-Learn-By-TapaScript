@@ -124,3 +124,15 @@ while (num <= 5) {
   num++;
   console.log(num);
 }
+
+// Do-While loop structure
+// do while loop structure
+// do {
+//   // code
+// } while (conditon);
+
+let number = 1;
+do {
+  console.log(number);
+  number++;
+} while (number <= 10);
