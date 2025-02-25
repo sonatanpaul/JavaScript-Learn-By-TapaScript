@@ -108,3 +108,19 @@ for (let i = 1; i <= 5; i++) {
 for (let i = 1, j = 10; i <= 10 && j >= 1; i++, j--) {
   console.log(i, j);
 }
+
+// while loop :
+// while loop structure
+
+// while(condition){
+//code
+// }
+
+// Option 1
+let num = 1;
+
+while (num <= 5) {
+  console.log(num);
+  num++;
+  console.log(num);
+}
