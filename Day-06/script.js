@@ -57,9 +57,30 @@ const calcResult2 = calc2();
 console.log(calcResult2); // 12
 
 // Rest Parameters
-
 function calculateThis(x, y, ...rest) {
   console.log(x, y, rest);
 }
 calculateThis(1, 2, 3, 4, 5, 6, 7, 8, 9);
 // ans:  1 2 [3,4,5,6,7,8,9]
+
+// Nested Function
+// Option - 1;
+function outer() {
+  console.log("Outer Function");
+  function inner() {
+    console.log("Inner Function ");
+  }
+  inner();
+}
+outer();
+
+// Option - 2
+function outer1() {
+  console.log("Outer");
+  return function inner() {
+    console.log("Inner");
+  };
+}
+
+const nestedFunc = outer1();
+console.log(nestedFunc());
