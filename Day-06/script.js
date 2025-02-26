@@ -19,3 +19,19 @@ function myFunction(a, b) {
   console.log(sum);
 }
 myFunction(10, 5);
+
+// function return keyword
+
+function sum(a, b) {
+  const result = a + b;
+  return result;
+}
+const result = sum(5, 12);
+console.log(result);
+
+function double(x) {
+  const multipy = 2 * x;
+  return multipy;
+}
+const output = double(result);
+console.log(output);
