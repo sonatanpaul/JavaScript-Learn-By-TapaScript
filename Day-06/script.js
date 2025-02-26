@@ -55,3 +55,11 @@ function calc2(a = 2, b = 4) {
 }
 const calcResult2 = calc2();
 console.log(calcResult2); // 12
+
+// Rest Parameters
+
+function calculateThis(x, y, ...rest) {
+  console.log(x, y, rest);
+}
+calculateThis(1, 2, 3, 4, 5, 6, 7, 8, 9);
+// ans:  1 2 [3,4,5,6,7,8,9]
