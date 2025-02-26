@@ -84,3 +84,35 @@ function outer1() {
 
 const nestedFunc = outer1();
 console.log(nestedFunc());
+
+// Callback Function
+// Option 1
+function foo() {
+  console.log("Foo");
+  buz();
+}
+
+function buz() {
+  console.log("Buz");
+}
+foo(buz);
+
+// Option -2
+function callback(hello) {
+  console.log("Hello");
+  hello();
+}
+callback(function () {
+  console.log("Hello World");
+});
+
+// Option - 3
+function call(callback) {
+  console.log("Callback");
+  callback();
+}
+
+let buz1 = function () {
+  console.log("Hello Callback");
+};
+call(buz1);
