@@ -4,3 +4,10 @@ function printThis() {
 }
 // Call or invoke a Function
 printThis();
+
+// Function as an Expression
+let printMe = function () {
+  console.log("PrintMe...");
+};
+
+printMe();
