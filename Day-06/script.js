@@ -183,3 +183,20 @@ console.log(func3(5));
 (function (count) {
   console.log("IIFE", count * 2);
 })(2);
+
+// Recursion
+// function foo() {
+//   foo();
+// }
+
+function hello(count) {
+  console.log(count);
+  if (count === 0) {
+    console.log("No more Exucuted");
+    return;
+  }
+
+  hello(count - 1);
+}
+
+hello(5);
