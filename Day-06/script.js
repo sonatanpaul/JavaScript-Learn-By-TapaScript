@@ -133,3 +133,24 @@ function greetiing(name) {
 console.log(greetiing("Sonatan")); // Hello Sonatan
 greetinMSG = "Hola ";
 console.log(greetiing("Sonatan Paul")); // Hola Sonatan Paul
+
+// Higer Order Function
+// 1.
+function getCamera(camera) {
+  camera();
+}
+getCamera(function () {
+  console.log("Sony Camera");
+});
+
+// 2.
+function returnFunc() {
+  return function () {
+    console.log("Hello");
+  };
+}
+
+const retFun = returnFunc();
+retFun();
+
+// This two type is Higher order function .
