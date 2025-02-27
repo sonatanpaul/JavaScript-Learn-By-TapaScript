@@ -173,3 +173,13 @@ console.log(func2(2, 2));
 // 4
 const func3 = (a) => a * 4;
 console.log(func3(5));
+
+// IIFE (Immediately Invoked Function Experssion)
+(function () {
+  console.log("Sonatan Paul");
+})();
+
+// 2
+(function (count) {
+  console.log("IIFE", count * 2);
+})(2);
