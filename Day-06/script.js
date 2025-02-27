@@ -152,5 +152,24 @@ function returnFunc() {
 
 const retFun = returnFunc();
 retFun();
-
 // This two type is Higher order function .
+
+// Arrow Function
+// 1
+const func = () => console.log("Hello");
+func();
+// 2
+const func1 = () => {
+  console.log("Hello1");
+};
+func1();
+// 3
+const func2 = (a, b) => {
+  return a + b;
+};
+
+console.log(func2(2, 2));
+
+// 4
+const func3 = (a) => a * 4;
+console.log(func3(5));
