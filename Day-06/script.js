@@ -116,3 +116,20 @@ let buz1 = function () {
   console.log("Hello Callback");
 };
 call(buz1);
+
+// Pure Function
+function greeting(name) {
+  return "Hello " + name;
+}
+console.log(greeting("Sonatan")); // Hello Sonatan
+
+// inpure Function
+let greetinMSG = "Hello ";
+
+function greetiing(name) {
+  return greetinMSG + name;
+}
+
+console.log(greetiing("Sonatan")); // Hello Sonatan
+greetinMSG = "Hola ";
+console.log(greetiing("Sonatan Paul")); // Hola Sonatan Paul
