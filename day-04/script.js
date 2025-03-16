@@ -1,3 +1,4 @@
+/*
 // if else :
 
 let catchingBus = true;
@@ -159,4 +160,6 @@ isExamPassed
   ? console.log("Yes, I am Passed Exam")
   : console.log("I am Fail the Exam");
 
-  
+  */
+
+console.log("Hello WOrld");

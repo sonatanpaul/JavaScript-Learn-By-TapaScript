@@ -185,9 +185,9 @@ console.log(func3(5));
 })(2);
 
 // Recursion
-// function foo() {
-//   foo();
-// }
+function foo() {
+  // foo();
+}
 
 function hello(count) {
   console.log(count);
