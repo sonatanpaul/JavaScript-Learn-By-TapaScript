@@ -24,6 +24,7 @@ console.log("name is", names);
 // TDZ Means : an area where you can not access a variable  until it is initialized.
 // Reference Error
 
+/*
 {
   // name variable TDZ started here // friend variable TDZ start here
   //
@@ -41,4 +42,21 @@ console.log("name is", names);
   let friend = 'Anik'  // friend variable TDZ end here
   console.log(friend) // Anik // reason : TDZ alrady end
   //
+}
+
+*/
+
+// Function Hoisting
+
+// invoke a function , chase()
+chase();
+// Declare a function, chase()
+function chase() {
+  console.log("Tom chases Jerry");
+  caught();
+}
+
+// Declare a function , caught
+function caught() {
+  console.log("Tom caught Jerry");
 }
