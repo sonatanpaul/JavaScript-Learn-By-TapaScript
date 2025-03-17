@@ -46,6 +46,7 @@ console.log("name is", names);
 
 */
 
+/*
 // Function Hoisting
 
 // invoke a function , chase()
@@ -60,3 +61,15 @@ function chase() {
 function caught() {
   console.log("Tom caught Jerry");
 }
+
+*/
+
+// Hoisting  Function as a Expression
+
+/*
+test(); // test is variable and variable value is function thats why execution phase e variable value initiliazation value undifined thats why error
+
+var test = function () {
+  console.log("I am being tested");
+};
+*/
