@@ -108,6 +108,7 @@ console.log(name);
 // Object Method
 // with factory function
 
+/*
 function createUser(name, age) {
   return {
     name,
@@ -142,3 +143,28 @@ const profile = {
 };
 
 console.log(profile.fullName());
+*/
+
+// Nested Object
+const profile = {
+  name: "Paul",
+  age: 26,
+  university: "SMUCT",
+  message: function () {
+    console.log(`my university name is ${this.university}`);
+  },
+  address: {
+    city: "Dhaka",
+    pin: 1212,
+    greeting() {
+      console.log(`my city name is ${this.city}`);
+    },
+  },
+};
+
+console.log(profile.name); // Paul
+console.log(profile.message()); // my university name is SMUCT
+console.log(profile.address.pin); // 1212
+console.log(profile.address.greeting()); // my city name is Dhaka
+
+
