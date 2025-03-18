@@ -189,3 +189,18 @@ outer();
 // console.log(outerVar); not allow
 // console.log(innerVar); not allow
 */
+
+// variable shadowing
+
+/*
+let message = "I am doing Great";
+
+function situation() {
+  let message = "I am not doing Great";
+  console.log(message); // I am not doing Great
+}
+situation();
+console.log(message); // I am doing Great
+
+*/
+ 
