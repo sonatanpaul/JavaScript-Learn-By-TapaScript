@@ -185,6 +185,7 @@ console.log("name" in person); // true
 */
 
 // for in loop
+/*
 const person = {
   name: "Sonatan",
   age: 26,
@@ -194,3 +195,16 @@ for (let key in person) {
   console.log(key);
   console.log(person[key]);
 }
+*/
+
+// Object key and Values :
+const person = {
+  name: "Paul",
+  age: 26,
+  color: "Black",
+};
+
+const key = Object.keys(person);
+console.log(key);
+const values = Object.values(person);
+console.log(values);
