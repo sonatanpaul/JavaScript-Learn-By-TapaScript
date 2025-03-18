@@ -8,4 +8,10 @@ const person = {
 
 // access object property
 console.log(person.name); // Sonatan
-console.log(person.age);
+console.log(person.age); // 26
+
+// How to add object property
+person.isSeniorCitizen = false;
+console.log(person); // total 3 property now
+
+
