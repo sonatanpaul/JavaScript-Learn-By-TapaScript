@@ -146,6 +146,7 @@ console.log(profile.fullName());
 */
 
 // Nested Object
+/*
 const profile = {
   name: "Paul",
   age: 26,
@@ -166,5 +167,30 @@ console.log(profile.name); // Paul
 console.log(profile.message()); // my university name is SMUCT
 console.log(profile.address.pin); // 1212
 console.log(profile.address.greeting()); // my city name is Dhaka
+*/
 
+// (in) method
+// cheack object property (name) true or false : in method
 
+/*
+const person = {
+  name: "Paul",
+  age: 26,
+};
+
+console.log(person.salary); // undifined
+console.log("salary" in person); // false
+console.log(person.name); // Paul
+console.log("name" in person); // true
+*/
+
+// for in loop
+const person = {
+  name: "Sonatan",
+  age: 26,
+  color: "Black",
+};
+for (let key in person) {
+  console.log(key);
+  console.log(person[key]);
+}
