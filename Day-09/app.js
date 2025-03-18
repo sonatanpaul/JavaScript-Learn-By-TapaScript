@@ -73,3 +73,33 @@ var test = function () {
   console.log("I am being tested");
 };
 */
+
+// Scope :
+
+// Global Scope : Variable declare outside of any function or block scope are in the global scope
+var name = "Sonatan"; // Sonatan
+
+function myName() {
+  console.log("name is ", name); // Sonatan
+}
+myName();
+console.log(name); // Sonatan
+
+{
+  console.log("Inside Block: my name is ", name); // Sonatan
+}
+
+// Note : var, let , const in Global scope
+
+// var:  when we declare a variable using var in the global scope that paritcular var variable added window object or global object.
+// example :
+var names = "Sonatan";
+console.log(names); // Sonatan
+console.log(window.names); // Sonatan
+
+// let and const :
+// when we declare a variable using let and const in the global scope that particular let and const variable not added window object and global object.
+// Example :
+let names = "Sonatan";
+console.log(names); // Sonatan
+console.log(window.names); // " "
