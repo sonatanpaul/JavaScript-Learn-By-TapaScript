@@ -34,6 +34,7 @@ console.log(result()); // 4
 */
 
 // Real World Example
+/*
 function createBankAccount(initialBlance) {
   let blance = initialBlance;
   console.log(blance);
@@ -45,3 +46,38 @@ function createBankAccount(initialBlance) {
 const paulBankAccount = createBankAccount(200);
 console.log(paulBankAccount(400)); // 600
 console.log(paulBankAccount(1000)); //1600
+*/
+
+function createBankAccount(initialBlance) {
+  let blance = initialBlance;
+  console.log("Initilazation Blance", blance);
+  return {
+    deposit: (amount) => {
+      blance = blance + amount;
+      console.log("Deposit Amount", amount, "Current Blance", blance);
+    },
+    withdraw: (amount) => {
+      if (amount > blance) {
+        console.warn("Taka Nai");
+      } else {
+        blance = blance - amount;
+        console.log("Withdraw Amount", amount, "Current Blance", blance);
+      }
+    },
+    checkBlance: () => {
+      console.log("Your Current Blance is", blance);
+    },
+  };
+}
+const sonatanAccount = createBankAccount(200);
+sonatanAccount.deposit(300); // deposit ammount 300
+sonatanAccount.withdraw(100);
+sonatanAccount.withdraw(50);
+sonatanAccount.withdraw(50);
+sonatanAccount.withdraw(50);
+sonatanAccount.withdraw(50);
+sonatanAccount.withdraw(50);
+sonatanAccount.withdraw(50);
+sonatanAccount.withdraw(50);
+sonatanAccount.withdraw(50);
+sonatanAccount.checkBlance();
