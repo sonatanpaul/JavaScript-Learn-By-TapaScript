@@ -1,5 +1,5 @@
 // Object Learn
-
+/*
 // literal Object
 const person = {
   name: "Sonatan",
@@ -34,3 +34,16 @@ delete user["Ex-Gf"];
 console.log(user);
 delete user.age;
 console.log(user);
+*/
+
+// dynamic variable value access
+let user = {
+  name: "paul",
+  age: 26,
+};
+
+let keyValue = "name";
+console.log(user.keyValue); // undifined
+console.log(user[keyValue]); // paul
+
+
