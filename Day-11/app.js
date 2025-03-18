@@ -198,6 +198,7 @@ for (let key in person) {
 */
 
 // Object key and Values :
+/*
 const person = {
   name: "Paul",
   age: 26,
@@ -206,5 +207,27 @@ const person = {
 
 const key = Object.keys(person);
 console.log(key);
+console.log(key.length);
 const values = Object.values(person);
 console.log(values);
+console.log(values.length);
+*/
+
+// Object Reference
+
+let person1 = {
+  name: "Sonatan Paul",
+  age: 26,
+}; // Memory Location : FVF54
+
+let person2 = {
+  name: "Sonatan Paul",
+  age: 26,
+}; // memory location : AF245
+
+console.log(person1 == person2); // false
+console.log(person1 === person2); // false
+
+person1 = person2; // change value person1 to person2
+console.log(person1 == person2); // true : memory no : AF245
+console.log(person1 === person2); // true :memory no : AF245
