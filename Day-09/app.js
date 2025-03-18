@@ -76,6 +76,7 @@ var test = function () {
 
 // Scope :
 
+/*
 // Global Scope : Variable declare outside of any function or block scope are in the global scope
 var name = "Sonatan"; // Sonatan
 
@@ -103,3 +104,33 @@ console.log(window.names); // Sonatan
 let names = "Sonatan";
 console.log(names); // Sonatan
 console.log(window.names); // " "
+*/
+
+// Function Scope :
+// any (var, let, const) variable declared inside a function are only accessible within that function
+
+/*
+// var :
+function toDo() {
+  var task = "Learn 40 Days of Js ";
+  console.log(task); //accessable
+}
+toDo();
+console.log(task); // not accessable
+
+// let :
+function toDo() {
+  let task = "Learn 40 Days of Js ";
+  console.log(task); //accessable
+}
+toDo();
+console.log(task); // not accessable
+
+// let :
+function toDo() {
+  const task = "Learn 40 Days of Js ";
+  console.log(task); //accessable
+}
+toDo();
+console.log(task); // not accessable
+*/
