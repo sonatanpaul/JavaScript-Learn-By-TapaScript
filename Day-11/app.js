@@ -37,14 +37,14 @@ console.log(user);
 */
 
 // dynamic variable value access
-let user = {
-  name: "paul",
-  age: 26,
-};
+// let user = {
+//   name: "paul",
+//   age: 26,
+// };
 
-let keyValue = "name";
-console.log(user.keyValue); // undifined
-console.log(user[keyValue]); // paul
+// let keyValue = "name";
+// console.log(user.keyValue); // undifined
+// console.log(user[keyValue]); // paul
 
 // dynamic variable and value ?
 // const car = prompt("hello");
@@ -74,6 +74,7 @@ console.log(Audi.name);
 
 */
 
+/*
 // new Object
 const person = new Object();
 person.name = "Sonatan Paul";
@@ -102,3 +103,42 @@ function myName(name, age) {
 
 const name = myName("Sonatan", 26);
 console.log(name);
+*/
+
+// Object Method
+// with factory function
+
+function createUser(name, age) {
+  return {
+    name,
+    age,
+    greeting() {
+      console.log(`my name is ${name} and age ${age} `);
+    },
+    user: function () {
+      console.log(`You name is ${this.name} and age ${this.age}`);
+    },
+  };
+}
+
+const user = createUser("Sonatan", 26);
+console.log(user);
+console.log(user.name);
+console.log(user.age);
+console.log(user.greeting());
+console.log(user.user());
+
+// literals way
+const profile = {
+  fname: "Sonatan",
+  lname: "Paul",
+  age: 26,
+  fullName() {
+    console.log(`my name is ${this.fname} ${this.lname}`);
+  },
+  youName: function () {
+    console.log(`you name is ${this.fname}`);
+  },
+};
+
+console.log(profile.fullName());
