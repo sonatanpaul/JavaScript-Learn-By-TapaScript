@@ -79,3 +79,26 @@ const person = new Object();
 person.name = "Sonatan Paul";
 person.age = 26;
 console.log(person);
+
+// create object with factory function
+
+function createUser(name, age) {
+  return {
+    name: name,
+    age: age,
+  };
+}
+
+const user1 = createUser("paul", 26);
+console.log(user1);
+const user2 = createUser("kumar", 26);
+console.log(user2);
+
+// with shorthand
+
+function myName(name, age) {
+  return { name, age };
+}
+
+const name = myName("Sonatan", 26);
+console.log(name);
