@@ -165,3 +165,27 @@ console.log(count); // not allow accessed
 
 console.log(count); // not allow accessed
 */
+
+// Scope Chain :
+
+/*
+let globalVar = "I am a global variable";
+
+function outer() {
+  let outerVar = "I am a outer variable";
+  function inner() {
+    let innerVar = "I am a inner variable";
+
+    console.log(globalVar); // I am a global variable
+    console.log(outerVar); // I am a outer variable
+    console.log(innerVar); // I am a inner variable
+  }
+  inner();
+}
+
+outer();
+
+// console.log(globalVar); not allow
+// console.log(outerVar); not allow
+// console.log(innerVar); not allow
+*/
