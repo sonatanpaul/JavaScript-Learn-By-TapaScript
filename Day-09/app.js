@@ -134,3 +134,34 @@ function toDo() {
 toDo();
 console.log(task); // not accessable
 */
+
+// Blocked Scope :
+// only(let, const) variable declared using inside {} cannot be accessed outside the block
+/*
+// var :
+{
+  var count = 10;
+  console.log(count); // allowed accessed
+}
+
+
+console.log(count); // allow accessed
+
+// Note : var always function scope
+
+// let :
+{
+  let count = 10;
+  console.log(count); // allowed accessed
+}
+
+console.log(count); // not allow accessed
+
+// let :
+{
+  const count = 10;
+  console.log(count); // allowed accessed
+}
+
+console.log(count); // not allow accessed
+*/
