@@ -371,3 +371,38 @@ console.log("name" in obj);
           // in  : check prototye and won property 
 
 */
+
+// Object Destructuring
+
+const person = {
+  name: "Paul",
+  age: 26,
+  friends: ["anik, bikash", "asraful"],
+  village: "Gobindopur",
+  address: {
+    village: "Paul Para",
+    Post: "Sagarkandi",
+    pin: 6661,
+  },
+};
+
+console.log(person.name); // Paul
+console.log(person.address.village); // Paul Para
+
+// const { village } = person;
+// console.log(village);
+
+// const {
+//   address: { Post, pin, village },
+//   age,
+// } = person;
+
+// console.log(Post);
+// console.log(age);
+// console.log(pin);
+
+// const { name, married = "False" } = person;
+// console.log(name);
+// console.log(married);
+const { name: nam } = person;
+console.log(nam);
