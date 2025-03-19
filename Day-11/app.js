@@ -473,3 +473,30 @@ console.log("name" in obj);
 // // console.log(person.color.age); // error
 // console.log(person.color?.age); // no error but undifiend
 // console.log(person.address.pin);
+
+// object desturturing in loop
+
+const persons = [
+  { name: "paul", age: 26 },
+  { name: "paul", age: 26 },
+  { name: "paul", age: 26 },
+  { name: "paul", age: 26 },
+  { name: "paul", age: 26 },
+  { name: "paul", age: 26 },
+];
+
+console.log(persons);
+
+// for (let person of persons) {
+//   console.log(person.name);
+// }
+
+// for (let { name, age } of persons) {
+//   console.log(name, age);
+// }
+
+// const name = {
+//   name: "sonatan",
+//   age: 26,
+// };
+// console.log(name.name);
