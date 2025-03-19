@@ -374,20 +374,20 @@ console.log("name" in obj);
 
 // Object Destructuring
 
-const person = {
-  name: "Paul",
-  age: 26,
-  friends: ["anik, bikash", "asraful"],
-  village: "Gobindopur",
-  address: {
-    village: "Paul Para",
-    Post: "Sagarkandi",
-    pin: 6661,
-  },
-};
+// const person = {
+//   name: "Paul",
+//   age: 26,
+//   friends: ["anik, bikash", "asraful"],
+//   village: "Gobindopur",
+//   address: {
+//     village: "Paul Para",
+//     Post: "Sagarkandi",
+//     pin: 6661,
+//   },
+// };
 
-console.log(person.name); // Paul
-console.log(person.address.village); // Paul Para
+// console.log(person.name); // Paul
+// console.log(person.address.village); // Paul Para
 
 // const { village } = person;
 // console.log(village);
@@ -404,5 +404,72 @@ console.log(person.address.village); // Paul Para
 // const { name, married = "False" } = person;
 // console.log(name);
 // console.log(married);
-const { name: nam } = person;
-console.log(nam);
+// const { name: nam } = person;
+// console.log(nam);
+
+//  Function desturcturing
+
+// const person = {
+//   name: "Paul",
+//   age: 26,
+//   friends: ["anik, bikash", "asraful"],
+//   village: "Gobindopur",
+//   address: {
+//     village: "Paul Para",
+//     Post: "Sagarkandi",
+//     pin: 6661,
+//   },
+// };
+
+// function myName(person) {
+//   const {
+//     village,
+//     address: { Post, pin },
+//   } = person;
+//   console.log(village);
+//   console.log(pin);
+//   console.log(Post);
+//   // console.log(person);
+// }
+
+// myName(person);
+
+// function sayName() {
+//   return {
+//     name: "Paul",
+//     age: 26,
+//     friends: ["anik, bikash", "asraful"],
+//     village: "Gobindopur",
+//     address: {
+//       village: "Paul Para",
+//       Post: "Sagarkandi",
+//       pin: 6661,
+//     },
+//   };
+// }
+
+// const object = sayName();
+// console.log(object);
+// const { village, age } = object;
+// console.log(age);
+// console.log(village);
+
+// // Optional Chaining
+
+// const person = {
+//   name: "Paul",
+//   age: 26,
+//   friends: ["anik, bikash", "asraful"],
+//   village: "Gobindopur",
+//   address: {
+//     village: "Paul Para",
+//     Post: "Sagarkandi",
+//     pin: 6661,
+//   },
+// };
+
+// console.log(person.name); // Paul
+// console.log(person.color); // undifined
+// // console.log(person.color.age); // error
+// console.log(person.color?.age); // no error but undifiend
+// console.log(person.address.pin);
