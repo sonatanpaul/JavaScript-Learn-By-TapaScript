@@ -318,4 +318,36 @@ console.log(returnObj);
 
 */
 
+// Object.freeze()
+
+/*
+const obj = {
+  name: "paul",
+  age: 26,
+};
+
+Object.freeze(obj);
+obj.color = "Black"; // can't add property
+console.log(obj);
+obj.age = 28;
+console.log(obj); // can't modified property
+delete obj.name;
+console.log(obj); // can't delete property
+
+*/
+
+// Object.seal()
+
+const obj = {
+  name: "paul",
+  age: 26,
+};
+
+Object.seal(obj);
+obj.name = "Sonatan Paul";
+console.log(obj); // allowed modified
+obj.color = "Black";
+console.log(obj); // can't allow add property
+delete obj.age;
+console.log(obj);
 
