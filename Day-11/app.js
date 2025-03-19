@@ -338,6 +338,7 @@ console.log(obj); // can't delete property
 
 // Object.seal()
 
+/*
 const obj = {
   name: "paul",
   age: 26,
@@ -351,3 +352,22 @@ console.log(obj); // can't allow add property
 delete obj.age;
 console.log(obj);
 
+*/
+
+/*
+// hasWon property
+
+const obj = {
+  name: "paul",
+  age: 26,
+};
+
+console.log(Object.hasOwn(obj, "name")); 
+console.log(Object.hasOwn(obj, "salary"));
+console.log("salary" in obj);
+console.log("name" in obj);
+
+// note : hasOwn() : check only won property
+          // in  : check prototye and won property 
+
+*/
