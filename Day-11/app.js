@@ -215,6 +215,7 @@ console.log(values.length);
 
 // Object Reference
 
+/*
 let person1 = {
   name: "Sonatan Paul",
   age: 26,
@@ -231,3 +232,27 @@ console.log(person1 === person2); // false
 person1 = person2; // change value person1 to person2
 console.log(person1 == person2); // true : memory no : AF245
 console.log(person1 === person2); // true :memory no : AF245
+*/
+
+// console.log("hello world");
+
+// Object.assign():
+
+// const target = { a: 2, b: 3 };
+// const source = { p: 2, q: 4 };
+
+/*
+const returnObj = Object.assign({}, target);
+console.log(returnObj === target); // false
+
+const returnObj2 = Object.assign(target, source);
+console.log(returnObj2); // {a: 2, b: 3, p: 2, q: 4}
+
+
+const target = { a: 2, b: 3 };
+const source = { b: 2, q: 4 };
+
+const returnObj = Object.assign(target, source);
+console.log(returnObj); // {a: 2, b: 2, q: 4}
+
+*/
