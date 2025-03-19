@@ -256,3 +256,40 @@ const returnObj = Object.assign(target, source);
 console.log(returnObj); // {a: 2, b: 2, q: 4}
 
 */
+
+// shallowCopy with Object.assign ()
+
+/*
+const obj = {
+  a: 2,
+  b: { c: 3 },
+};
+
+const obj1 = Object.assign({}, obj);
+obj1.b.c = 4;
+console.log(obj1.b.c); //  4
+console.log(obj.b.c); //  4
+
+obj1.a = 5;
+console.log(obj1.a); // 5
+console.log(obj.a); // 2
+*/
+
+// copy with structuredClone in deep copy
+/*
+const person = {
+  a: 54,
+  b: { c: 50 },
+};
+
+const obj = structuredClone(person);
+obj.a = 60;
+console.log(obj.a); // 60;
+console.log(person.a); // 54
+
+obj.b.c = 40;
+console.log(obj.b.c); // 40
+console.log(person.b.c); // 50
+*/
+
+
