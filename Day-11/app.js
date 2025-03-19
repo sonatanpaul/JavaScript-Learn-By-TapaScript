@@ -292,4 +292,30 @@ console.log(obj.b.c); // 40
 console.log(person.b.c); // 50
 */
 
+// Object entries()
+// obj to array
+
+/*
+const obj = {
+  a: 2,
+  b: 4,
+};
+
+const myArr = Object.entries(obj);
+console.log(myArr);
+2; // [Array(2), Array(2)]
+
+// Object fromEntries()
+// convert array to object
+
+const persons = new Map([
+  ["foo", "rayhan"],
+  [10, 20],
+]);
+
+const returnObj = Object.fromEntries(persons);
+console.log(returnObj);
+
+*/
+
 
