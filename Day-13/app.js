@@ -148,6 +148,7 @@ console.log(person.sayName()()); // refer person perent scope
 
 // Call :
 
+/*
 function greeting() {
   console.log(`user name is  ${this.name}`);
 }
@@ -171,3 +172,20 @@ const person = {
 };
 
 likes.call(person, "Learning", "Teching");
+
+*/
+// Apply () Method :
+
+const likes = function (hoby1, hoby2) {
+  console.log(this.name, "person like", hoby1, hoby2);
+  console.log(this.name);
+};
+
+const person = {
+  name: "Sonatan",
+};
+
+const hobiesToApply = ["Learning", "Teching"];
+// apply method passing argument like array 
+likes.apply(person, hobiesToApply);
+
