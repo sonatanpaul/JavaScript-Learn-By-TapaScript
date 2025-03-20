@@ -476,16 +476,16 @@ console.log("name" in obj);
 
 // object desturturing in loop
 
-const persons = [
-  { name: "paul", age: 26 },
-  { name: "paul", age: 26 },
-  { name: "paul", age: 26 },
-  { name: "paul", age: 26 },
-  { name: "paul", age: 26 },
-  { name: "paul", age: 26 },
-];
+// const persons = [
+//   { name: "paul", age: 26 },
+//   { name: "paul", age: 26 },
+//   { name: "paul", age: 26 },
+//   { name: "paul", age: 26 },
+//   { name: "paul", age: 26 },
+//   { name: "paul", age: 26 },
+// ];
 
-console.log(persons);
+// console.log(persons);
 
 // for (let person of persons) {
 //   console.log(person.name);
@@ -500,3 +500,5 @@ console.log(persons);
 //   age: 26,
 // };
 // console.log(name.name);
+
+// Revise ===========================
