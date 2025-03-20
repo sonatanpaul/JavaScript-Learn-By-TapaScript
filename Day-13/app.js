@@ -191,16 +191,43 @@ likes.call(person, "Learning", "Teching");
 
 // Bind() Method
 
-const likes = function (hoby1, hoby2) {
-  console.log(this.name, "person like", hoby1, hoby2);
-  console.log(this.name);
-};
+// const likes = function (hoby1, hoby2) {
+//   console.log(this.name, "person like", hoby1, hoby2);
+//   console.log(this.name);
+// };
+
+// const person = {
+//   name: "Sonatan",
+// };
+
+// const hobiesToApply = ["Learning", "Teching"];
+// // apply method passing argument like array
+// const bindNew = likes.bind(person, "Learning", "Teching");
+// console.log(bindNew());
+
+// const person = {
+//   id: "A2542321",
+//   names: function () {
+//     console.log(this.id);
+//     const inner = () => {
+//       console.log(this);
+//     };
+//     inner();
+//   },
+// };
+// person.names();
 
 const person = {
-  name: "Sonatan",
+  name: "Paul",
+  age: 26,
+  address: {
+    village: "Gobindopur",
+    Post: "Sagarkandi",
+    sayName: () => {
+      console.log(this);
+    },
+  },
 };
 
-const hobiesToApply = ["Learning", "Teching"];
-// apply method passing argument like array
-const bindNew = likes.bind(person, "Learning", "Teching");
-console.log(bindNew());
+person.address.sayName(); 
+// why refer window why ignore adress parent scope
