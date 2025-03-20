@@ -176,6 +176,21 @@ likes.call(person, "Learning", "Teching");
 */
 // Apply () Method :
 
+// const likes = function (hoby1, hoby2) {
+//   console.log(this.name, "person like", hoby1, hoby2);
+//   console.log(this.name);
+// };
+
+// const person = {
+//   name: "Sonatan",
+// };
+
+// const hobiesToApply = ["Learning", "Teching"];
+// // apply method passing argument like array
+// likes.apply(person, hobiesToApply);
+
+// Bind() Method
+
 const likes = function (hoby1, hoby2) {
   console.log(this.name, "person like", hoby1, hoby2);
   console.log(this.name);
@@ -186,6 +201,6 @@ const person = {
 };
 
 const hobiesToApply = ["Learning", "Teching"];
-// apply method passing argument like array 
-likes.apply(person, hobiesToApply);
-
+// apply method passing argument like array
+const bindNew = likes.bind(person, "Learning", "Teching");
+console.log(bindNew());
