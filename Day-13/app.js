@@ -143,3 +143,31 @@ const person = {
 
 console.log(person.sayName()()); // refer person perent scope
 */
+
+// Explicit Binding : Call () , Apply() , Bind ( ) :
+
+// Call :
+
+function greeting() {
+  console.log(`user name is  ${this.name}`);
+}
+
+const user = {
+  name: "Sonatan",
+  city: "Dhaka",
+};
+
+greeting.call(user); // refer user object
+
+// with argument in call method
+
+const likes = function (hoby1, hoby2) {
+  console.log(this.name, "person like", hoby1, hoby2);
+  console.log(this.name);
+};
+
+const person = {
+  name: "Sonatan",
+};
+
+likes.call(person, "Learning", "Teching");
