@@ -51,15 +51,19 @@ const person = {
   address: {
     village: "Gobindopur",
     Post: "Sagarkandi",
-    getName: () => {
-      return this.age;
+    amar: {
+      tumi: "ami",
+      getName: () => {
+        return this;
+      },
     },
   },
 };
 
-console.log(person.address.getName()); // undefined
+console.log(person.address.amar.getName()); // undefined
 */
 
+/*
 const tom = {
   name: "Tom",
   age: 3,
@@ -98,4 +102,44 @@ function outer() {
 }
 const returnFunc = outer(); // refer window
 returnFunc(); // refer window
+*/
 
+// Inside Arrow function with This Keyword
+
+// const getFood = () => this;
+// console.log(getFood()); // refer window
+
+// const person = {
+//   name: "Paul",
+//   age: 26,
+//   sayName: function () {
+//     console.log(this.name);
+//   },
+// };
+
+// console.log(person.sayName()); // refer same as object
+
+// Arrow
+// const person = {
+//   name: "Paul",
+//   age: 26,
+//   sayName: () => {
+//     console.log(this);
+//   },
+// };
+
+// console.log(person.sayName()); // refer person perent scope thats why return window
+
+/*
+const person = {
+  name: "Paul",
+  age: 26,
+  sayName: function () {
+    return () => {
+      console.log(this);
+    };
+  },
+};
+
+console.log(person.sayName()()); // refer person perent scope
+*/
