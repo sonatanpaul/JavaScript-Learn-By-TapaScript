@@ -81,3 +81,21 @@ tom.logMessage(); // refer tom object
 
 greetMe(jerry);
 jerry.logMessage(); // refer jerry object
+
+// This in Normal Function
+
+function sayName() {
+  console.log(this);
+}
+
+sayName(); //  refer window
+
+function outer() {
+  console.log("outer", this);
+  return function inner() {
+    console.log("inner", this);
+  };
+}
+const returnFunc = outer(); // refer window
+returnFunc(); // refer window
+
