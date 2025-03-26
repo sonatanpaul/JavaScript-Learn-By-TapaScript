@@ -18,6 +18,7 @@ try {
 }
 // ==========================
 
+/*
 try {
   console.log("execution code here");
   abc;
@@ -25,5 +26,27 @@ try {
 } catch (err) {
   console.log("an Error occuard "); // an Error occuard
   console.log(err); //ReferenceError: abc is not defined
+  console.log(err.name); // ReferenceError
+  console.log(err.message); // abc is not defined
+  console.log(err.stack); //   at app.js:23:3
   console.error("an Error occuard "); // an Error occuard
 }
+*/
+// Real World Casses :
+
+// throw :
+function dividedNumbers(a, b) {
+  try {
+    console.log(a, b);
+    if (b === 0) {
+      let err = new Error("Divison by zero is not allowd");
+      throw err;
+    }
+    const dividedby = a / b;
+    console.log(dividedby);
+  } catch (error) {
+    console.log("Got Math Error:", error);
+  }
+}
+
+dividedNumbers(20, 0);
