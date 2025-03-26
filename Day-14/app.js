@@ -9,3 +9,21 @@ const obj = null;
 
 // console.log(new Array(-1)); // app.js:10 Uncaught RangeError: Invalid array length
 
+// try and catch :
+
+try {
+  // logic code here
+} catch (err) {
+  // if logic code not working then execute catech blok
+}
+// ==========================
+
+try {
+  console.log("execution code here");
+  abc;
+  console.log("execution code end here");
+} catch (err) {
+  console.log("an Error occuard "); // an Error occuard
+  console.log(err); //ReferenceError: abc is not defined
+  console.error("an Error occuard "); // an Error occuard
+}
