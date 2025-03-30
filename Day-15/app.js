@@ -16,19 +16,36 @@ console.log(mixedArray); // [10, true, 'Sonatan']
 // How To Create Array :
 
 // literals Way
-const friends = ["Pual", "Anik", "Asraful"];
-console.log(friends); // ['Pual', 'Anik', 'Asraful']
+// const friends = ["Pual", "Anik", "Asraful"];
+// console.log(friends); // ['Pual', 'Anik', 'Asraful']
 
 // Constructor Way Array :
-const newFriends = ["Pual", "Anik", "Asraful"];
-console.log(newFriends); // "Pual", "Anik", "Asraful"
+// const newFriends = ["Pual", "Anik", "Asraful"];
+// console.log(newFriends); // "Pual", "Anik", "Asraful"
 
 // Note : this two array element are same but memory referense are deferent .
 
-console.log(friends === newFriends); // false
+// console.log(friends === newFriends); // false
 
 // Note : When we create array new Array Constructor function and given one element this array retrun number of element
 // example :
 
-const newArray = new Array(5);
-console.log(newArray); // [empty × 5]
+// const newArray = new Array(5);
+// console.log(newArray); // [empty × 5]
+
+// How to access Elements from an Array :
+
+// ====================================================
+
+// syntex
+// const element = array[index]
+
+/*
+const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+
+const element1 = salad[1];
+console.log(element1); // 🍄
+
+const element2 = salad[3];
+console.log(element2); // 🥒
+*/
