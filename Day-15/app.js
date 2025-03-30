@@ -96,3 +96,24 @@ console.log(shift); // 🍅
 console.log(salad); // ['🍄', '🥦', '🥒', '🌽', '🥕']
 */
 
+/*
+// Array Copy or Clone : Slice ()
+const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+const saladCopy = salad.slice();
+
+console.log("Salad Before copy", salad); // ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑']
+console.log("Salad after copy", saladCopy); // ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑']
+console.log(salad === saladCopy); // false
+
+// Note : when we copy slice method create new array with new reference 
+
+*/
+
+/*
+// Check Array (True or Not) :
+console.log(Array.isArray("🍅")); // false
+console.log(Array.isArray([])); // true
+console.log(Array.isArray({ tomato: "🍅" })); // false
+const arr = [1, 2, 3, 4, 5];
+console.log(Array.isArray(arr)); // true
+*/
