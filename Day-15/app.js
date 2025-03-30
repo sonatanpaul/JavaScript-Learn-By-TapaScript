@@ -48,4 +48,51 @@ console.log(element1); // 🍄
 
 const element2 = salad[3];
 console.log(element2); // 🥒
+
+const element3 = salad[5];
+console.log(element3); // 🥕
 */
+
+/*
+// For lop with Array :
+const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+
+for (let i = 0; i <= salad.length - 1; i++) {
+  console.log(`Element at index ${i} is ${salad[i]}`);
+}
+*/
+
+/*
+// Adding Element to Array :
+// push() -  Add Element in array last element
+const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+console.log(salad); // ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑']
+
+const pushEle = salad.push("🥜"); //  return total element of index
+console.log(pushEle); // 8
+console.log(salad); //  ['🍅', '🍄', '🥦', '🥒', '🌽', '🥕', '🥑', '🥜']
+
+// unshift() add element in array first element
+const unshiftEle = salad.unshift("🥜");
+console.log(unshiftEle); // 9
+console.log(salad);
+*/
+
+/*
+// Remove Element to Array : pop() and shift()
+const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+// pop() method remove last element of Array :
+// Note : pop() method return remove element
+const pop = salad.pop();
+console.log(pop); //  🥑
+console.log(salad);
+["🍅", "🍄", "🥦", "🥒", "🌽", "🥕"];
+
+// shift () method remove first element of array :
+// Note: shift () return remove element
+
+const shift = salad.shift();
+console.log(shift); // 🍅
+console.log(salad); // ['🍄', '🥦', '🥒', '🌽', '🥕']
+*/
+
