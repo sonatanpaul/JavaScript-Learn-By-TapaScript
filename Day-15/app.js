@@ -119,6 +119,7 @@ console.log(Array.isArray(arr)); // true
 */
 
 // Array Destructuring :
+
 // const [tomato, mushrom, carrot] = ["🍅", "🍄", "🥕"];
 // console.log(tomato);
 // console.log(mushrom);
@@ -130,5 +131,26 @@ const [tomato, mushrom, carrot] = salad;
 console.log(tomato);
 console.log(carrot);
 console.log(mushrom);
-
 */
+
+// assign a default value :
+// Note : when value is undefined and skip value and null value then work only default value
+
+// const salad = ["🍅", "🥕"];
+// const [tomato, carrot, mushrom = "🍄"] = salad;
+// console.log(tomato, mushrom, carrot);
+
+// const [tomato = "🍅", mushroom, carrot] = [, "🍄", "🥕"];
+// console.log(tomato);
+// console.log(mushroom);
+// console.log(carrot);
+
+// const [num2, num3, num1 = "sonatan"] = ["anik", "rayhan"];
+// console.log(num1);
+// console.log(num2);
+// console.log(num3);
+
+// const [mushroom, tomato = "🍅", carrot] = ["🍄", , "🥕"];
+// console.log(tomato);
+// console.log(mushroom);
+// console.log(carrot);
