@@ -154,3 +154,36 @@ console.log(mushrom);
 // console.log(tomato);
 // console.log(mushroom);
 // console.log(carrot);
+
+// Skip Value :
+
+// const salad = ["🍅", "🍄", "🥕"];
+
+// const [, , carrot] = salad;
+// console.log(carrot);
+// const [tomato, ,] = salad;
+// console.log(tomato);
+// const [, mushroom, ,] = salad;
+// console.log(mushroom);
+
+// Nested Array :
+// const numbers = [1, 2, 3, [4, 5, 6]];
+// console.log(numbers[2]); // 3
+// console.log(numbers[3]); // [4, 5, 6]
+
+// Nested Array Destructuring :
+// const numbers = [1, 2, 3, [4, 5, 6]];
+// console.log(numbers[1]); // 2
+// console.log(numbers[3][1]); // 5
+
+// const [num1, num2, num3, [num4, num5, num6]] = numbers;
+// console.log(num1);
+// console.log(num2);
+// console.log(num3);
+// console.log(num4);
+// console.log(num5);
+// console.log(num6);
+
+// const [, , num3, [, , num6]] = numbers;
+// console.log(num3);
+// console.log(num6);
