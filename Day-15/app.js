@@ -117,3 +117,18 @@ console.log(Array.isArray({ tomato: "🍅" })); // false
 const arr = [1, 2, 3, 4, 5];
 console.log(Array.isArray(arr)); // true
 */
+
+// Array Destructuring :
+// const [tomato, mushrom, carrot] = ["🍅", "🍄", "🥕"];
+// console.log(tomato);
+// console.log(mushrom);
+// console.log(carrot);
+
+/*
+const salad = ["🍅", "🍄", "🥕"];
+const [tomato, mushrom, carrot] = salad;
+console.log(tomato);
+console.log(carrot);
+console.log(mushrom);
+
+*/
