@@ -353,3 +353,31 @@ console.log(descendingSorting);
 // console.log(numbers.sort((a, b) => b - a)); // [61, 11, 7, 5, 4, 4, 3, 2, 2, 1, 1]
 // console.log(numbers.sort((a, b) => (a === b ? 0 : a > b ? 1 : -1)));
 // console.log(numbers.sort((a, b) => (a === b ? 0 : a < b ? 1 : -1)));
+
+// splice () Method :
+
+// splice (start, deleteCount, item, item1, item2)
+/*
+const names = ["tom", "jerry", "bob", "jhon"];
+console.log(names); // ['tom', 'jerry', 'bob', 'jhon']
+
+console.log(names.splice(1, 2)); //  ['jerry', 'bob']
+console.log(names); // ['tom', 'jhon']
+
+console.log(names.splice(2, 0, "paul", "anik")); // return []
+console.log(names); // ['tom', 'jerry', 'paul', 'anik', 'bob', 'jhon']
+
+console.log(names.splice(1, 3, "akash")); // ['jerry', 'paul', 'anik']
+console.log(names); // ['tom', 'akash', 'bob', 'jhon']
+*/
+
+// at () Method :
+// find index element
+/*
+const names = ["tom", "jerry", "bob", "jhon"];
+
+console.log(names.at(0)); // tom
+console.log(names.at(2)); //  bob
+console.log(names.at(3)); //  jhon
+console.log(names.at(5)); //  undifined
+*/
