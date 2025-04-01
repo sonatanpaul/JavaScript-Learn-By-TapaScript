@@ -216,3 +216,12 @@ console.log(salad === saladCopy); //  false
 // Note :  when new need new copy or clone array then we use spread opreator 
 */
 
+// Swaping Variable :
+/*
+let sad = "😔";
+let happy = "🙂";
+
+[sad, happy] = [happy, sad];
+console.log(sad); // 🙂
+console.log(happy); // 😔
+*/
