@@ -257,3 +257,13 @@ console.log(happy); // 😔
 // const merged = first.concat(second);
 // const merged = first.concat(second, 9, 10);
 // console.log(merged); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// join() Method :
+// const emotions = ["🙂", "😍", "🙄", "😟"];
+// const joined = emotions.join(); // 🙂,😍,🙄,😟
+// const joined = emotions.join(" "); // 🙂 😍 🙄 😟
+// const joined = emotions.join("_"); // 🙂_😍_🙄_😟
+// console.log(joined);
+
+// when we use empty array with join method always return empty stirng
+// console.log([].join("--")); //  empty
