@@ -236,4 +236,16 @@ console.log(happy); // 😔
 // const vegEmotion = emotions.concat(veggies);
 // console.log(vegEmotion);
 
-// when we need two or more array merge we use concat method or spread operator 
+// when we need two or more array merge we use concat method or spread operator
+
+// Length Property :
+
+const arr1 = ["🥦", "🥒", "🌽", "🥕"];
+const arr2 = new Array(7);
+console.log(arr1.length); // 4
+console.log(arr2.length); // 7
+// note :  we know when we decalare constractor function and passing 1 element of number that's array return empty number of element
+
+// also we change array length
+arr1.length = 20;
+console.log(arr1.length); // 20
