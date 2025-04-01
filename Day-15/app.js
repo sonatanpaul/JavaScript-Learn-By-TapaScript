@@ -304,3 +304,12 @@ console.log(names.indexOf("paul")); // -1
 // console.log(names.indexOf("tom")); // 0
 // console.log(names.indexOf("anik")); // 2
 // console.log(names.lastIndexOf("anik")); // 4
+
+// reverse() Method :
+/*
+const names = ["tom", "bob", "anik", "tom", "anik"];
+const reverseName = names.reverse();
+console.log(reverseName); // ['anik', 'tom', 'anik', 'bob', 'tom']
+console.log(names); //['anik', 'tom', 'anik', 'bob', 'tom']
+*/
+//  Note : revarse method is muteable method
