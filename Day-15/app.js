@@ -287,3 +287,20 @@ console.log(names.includes("tom")); // true
 console.log(names.includes("Tom")); //  false
 console.log(names.includes("asraful")); // false
 */
+
+// indexOf () Method :
+
+/*
+const names = ["tom", "bob", "anik"];
+console.log(names.indexOf("tom")); // 0
+console.log(names.indexOf("anik")); // 2
+console.log(names.indexOf("rayhan")); // -1
+console.log(names.indexOf("paul")); // -1
+*/
+
+// lastIndexOf () Method :
+// const names = ["tom", "bob", "anik", "tom", "anik"];
+// console.log(names.lastIndexOf("tom")); // 3
+// console.log(names.indexOf("tom")); // 0
+// console.log(names.indexOf("anik")); // 2
+// console.log(names.lastIndexOf("anik")); // 4
