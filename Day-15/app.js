@@ -204,3 +204,15 @@ console.log(tomato); // 🍅
 console.log(mushroom); // 🍄
 console.log(others); // ['🥦', '🥒', '🌽']
 */
+
+// Spread Parameter :
+/*
+const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+const saladCopy = [...salad];
+console.log(salad);
+console.log(saladCopy);
+
+console.log(salad === saladCopy); //  false
+// Note :  when new need new copy or clone array then we use spread opreator 
+*/
+
