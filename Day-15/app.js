@@ -187,3 +187,20 @@ console.log(mushrom);
 // const [, , num3, [, , num6]] = numbers;
 // console.log(num3);
 // console.log(num6);
+
+// Rest Parameter :
+
+/*
+const salad = ["🍅", "🍄", "🥦", "🥒", "🌽", "🥕", "🥑"];
+const [tomato, mushroom, ...rest] = salad;
+console.log(tomato); // 🍅
+console.log(mushroom); // 🍄
+console.log(rest); // ['🥦', '🥒', '🌽', '🥕', '🥑']
+*/
+
+/*
+const [tomato, mushroom, ...others] = ["🍅", "🍄", "🥦", "🥒", "🌽"];
+console.log(tomato); // 🍅
+console.log(mushroom); // 🍄
+console.log(others); // ['🥦', '🥒', '🌽']
+*/
