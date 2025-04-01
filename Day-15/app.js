@@ -373,6 +373,7 @@ console.log(names); // ['tom', 'akash', 'bob', 'jhon']
 
 // at () Method :
 // find index element
+// also we use negetive and postive index
 /*
 const names = ["tom", "jerry", "bob", "jhon"];
 
@@ -380,4 +381,46 @@ console.log(names.at(0)); // tom
 console.log(names.at(2)); //  bob
 console.log(names.at(3)); //  jhon
 console.log(names.at(5)); //  undifined
+console.log(names.at(-1)); //  jhon
+console.log(names.at(-3)); //  jerry
+console.log(names.at(-4)); // tom
+*/
+
+// copyWithin () Method :
+// copyWithin (target , start, end)
+
+/*
+const array = [1, 2, 3, 4, 5, 6, 7, 8];
+array.copyWithin(0, 4);
+console.log(array); // [5, 6, 7, 8, 5, 6, 7, 8]
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+numbers.copyWithin(1, 3, 5);
+console.log(numbers); // [1, 4, 5, 4, 5, 6, 7, 8]
+*/
+
+// flat ()  Method :
+
+/*
+const numbers = [0, 1, 2, 3, [4, 5]];
+console.log(numbers); // [0, 1, 2, 3, Array(2)]
+console.log(numbers.flat()); // [0, 1, 2, 3, 4, 5]
+*/
+
+/*
+const numbers = [0, 1, [2, 3, [4, 5]]];
+console.log(numbers); // [0, 1, Array(3)]
+console.log(numbers.flat()); // [0, 1, 2, 3, Array(2)]
+*/
+
+/*
+const numbers = [0, 1, [2, 3, [4, 5]]];
+console.log(numbers); // [0, 1, Array(3)]
+console.log(numbers.flat(2)); //  [0, 1, 2, 3, 4, 5]
+*/
+
+/*
+const numbers = [0, 1, [2, [3, [4, 5]]]];
+console.log(numbers); // [0, 1, Array(2)]
+console.log(numbers.flat(Infinity)); // [0, 1, 2, 3, 4, 5]
 */
