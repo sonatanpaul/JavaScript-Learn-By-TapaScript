@@ -216,7 +216,7 @@ console.log(salad === saladCopy); //  false
 // Note :  when new need new copy or clone array then we use spread opreator 
 */
 
-// Swaping Variable :
+// Swapping Variable :
 /*
 let sad = "😔";
 let happy = "🙂";
@@ -225,3 +225,15 @@ let happy = "🙂";
 console.log(sad); // 🙂
 console.log(happy); // 😔
 */
+
+// Merge
+// const emotions = ["🙂", "😔"];
+// const veggies = ["🥦", "🥒", "🌽", "🥕"];
+
+// const vegEmotion = [...emotions, ...veggies];
+// console.log(vegEmotion);
+
+// const vegEmotion = emotions.concat(veggies);
+// console.log(vegEmotion);
+
+// when we need two or more array merge we use concat method or spread operator 
