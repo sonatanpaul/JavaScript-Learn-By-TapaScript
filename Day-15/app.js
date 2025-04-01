@@ -267,3 +267,15 @@ console.log(happy); // 😔
 
 // when we use empty array with join method always return empty stirng
 // console.log([].join("--")); //  empty
+
+// fill() Method :
+
+// const color = ["blue", "pink", "white", "black"];
+// const modified = color.fill("tomato");
+// console.log(modified);
+// console.log(color);
+// Note : fill () method modified orginal array that's why fill () mutable method
+// color.fill("orange", 1, 4);
+// console.log(color);
+// color.fill("tomato", -3, -1);
+// console.log(color);
