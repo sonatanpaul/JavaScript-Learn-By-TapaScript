@@ -240,12 +240,20 @@ console.log(happy); // 😔
 
 // Length Property :
 
-const arr1 = ["🥦", "🥒", "🌽", "🥕"];
-const arr2 = new Array(7);
-console.log(arr1.length); // 4
-console.log(arr2.length); // 7
+// const arr1 = ["🥦", "🥒", "🌽", "🥕"];
+// const arr2 = new Array(7);
+// console.log(arr1.length); // 4
+// console.log(arr2.length); // 7
 // note :  we know when we decalare constractor function and passing 1 element of number that's array return empty number of element
 
 // also we change array length
-arr1.length = 20;
-console.log(arr1.length); // 20
+// arr1.length = 20;
+// console.log(arr1.length); // 20
+
+// concat() Method :
+
+// const first = [1, 2, 3, 4];
+// const second = [5, 6, 7, 8];
+// const merged = first.concat(second);
+// const merged = first.concat(second, 9, 10);
+// console.log(merged); // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
