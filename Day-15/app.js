@@ -279,3 +279,11 @@ console.log(happy); // 😔
 // console.log(color);
 // color.fill("tomato", -3, -1);
 // console.log(color);
+
+// includes () Method :
+/*
+const names = ["tom", "bob", "anik"];
+console.log(names.includes("tom")); // true
+console.log(names.includes("Tom")); //  false
+console.log(names.includes("asraful")); // false
+*/
