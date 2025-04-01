@@ -312,4 +312,44 @@ const reverseName = names.reverse();
 console.log(reverseName); // ['anik', 'tom', 'anik', 'bob', 'tom']
 console.log(names); //['anik', 'tom', 'anik', 'bob', 'tom']
 */
-//  Note : revarse method is muteable method
+//  Note : revarse method is muteable method reasson reverse method modified orginal array
+
+// sort() Method :
+// The default sort() method converts the element types into strings
+//  The default sorting order is ascending.
+
+// const names = ["tom", "bob", "anik", "tom", "anik"];
+// console.log("After default sorting ", names.sort());
+// console.log("After default sorting", names.sort().reverse());
+
+const artists = [
+  "John White Abbott",
+  "Leonardo da Vinci",
+  "Charles Aubry",
+  "Anna Atkins",
+  "Barent Avercamp",
+];
+
+// ascending
+// console.log("Default sorting of artists array", artists.sort());
+// descending
+
+/*
+const descendingSorting = artists.sort(function (a, b) {
+  return a === b ? 0 : a > b ? 1 : -1;
+});
+console.log(descendingSorting);
+*/
+
+/*
+const descendingSorting = artists.sort(function (a, b) {
+  return a === b ? 0 : a < b ? 1 : -1;
+});
+console.log(descendingSorting);
+*/
+
+// const numbers = [1, 2, 5, 4, 11, 4, 1, 2, 7, 3, 61];
+// console.log(numbers.sort((a, b) => a - b)); // [1, 1, 2, 2, 3, 4, 4, 5, 7, 11, 61]
+// console.log(numbers.sort((a, b) => b - a)); // [61, 11, 7, 5, 4, 4, 3, 2, 2, 1, 1]
+// console.log(numbers.sort((a, b) => (a === b ? 0 : a > b ? 1 : -1)));
+// console.log(numbers.sort((a, b) => (a === b ? 0 : a < b ? 1 : -1)));
