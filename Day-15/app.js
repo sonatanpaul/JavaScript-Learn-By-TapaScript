@@ -470,3 +470,16 @@ console.log(numbers.flat(Infinity)); // [0, 1, 2, 3, 4, 5]
   const namesSpliced = names.toSpliced(1, 2, "anik", "raha");
   console.log(namesSpliced); // ['jhon', 'anik', 'raha', 'tom']
 }
+
+{
+  // with () Method :
+  // with(index, value) :
+  const numbers = [1, 2, 3, 4, 5, 6];
+  const newNumbers = numbers.with(2, 6);
+  console.log(numbers); // [1, 2, 3, 4, 5, 6]
+  console.log(newNumbers); // [1, 2, 6, 4, 5, 6]
+  const anotherNumbers = numbers.with(-2, 10);
+  console.log(numbers); // [1, 2, 3, 4, 5, 6]
+  console.log(anotherNumbers); // [1, 2, 3, 4, 10, 6]
+  
+}
