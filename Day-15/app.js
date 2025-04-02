@@ -442,3 +442,31 @@ console.log(numbers.flat(Infinity)); // [0, 1, 2, 3, 4, 5]
   });
   console.log(groupBySalary);
 }
+
+// Immutability Method :
+// toReversed() Method :
+
+{
+  const names = ["jhon", "bob", "paul", "tom"];
+  const reverseItem = names.toReversed();
+  console.log(reverseItem); //  ['tom', 'paul', 'bob', 'jhon']
+  console.log(names); // ['jhon', 'bob', 'paul', 'tom']
+}
+
+{
+  // ToSorted () Method :
+  const names = ["jhon", "bob", "paul", "tom"];
+  const sortedItem = names.toSorted();
+  console.log(sortedItem); // ['bob', 'jhon', 'paul', 'tom']
+  console.log(names); // ['jhon', 'bob', 'paul', 'tom']
+}
+
+{
+  // ToSpliced () Method :
+  const names = ["jhon", "bob", "paul", "tom"];
+  const namesSplice = names.toSpliced(1, 0, "kumar");
+  console.log("Orginal Array", names); //['jhon', 'bob', 'paul', 'tom']
+  console.log("Spliced Array", namesSplice); //['jhon', 'kumar', 'bob', 'paul', 'tom']
+  const namesSpliced = names.toSpliced(1, 2, "anik", "raha");
+  console.log(namesSpliced); // ['jhon', 'anik', 'raha', 'tom']
+}
