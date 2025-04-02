@@ -424,3 +424,21 @@ const numbers = [0, 1, [2, [3, [4, 5]]]];
 console.log(numbers); // [0, 1, Array(2)]
 console.log(numbers.flat(Infinity)); // [0, 1, 2, 3, 4, 5]
 */
+
+// grouping :
+{
+  const employees = [
+    { name: "Bob", dept: "Engineering", salary: 5000 },
+    { name: "Alex", dept: "HR", salary: 3000 },
+    { name: "Ravi", dept: "Engineering", salary: 7000 },
+    { name: "John", dept: "Engineering", salary: 1000 },
+    { name: "Tom", dept: "Sales", salary: 6000 },
+  ];
+  const groupByData = Object.groupBy(employees, ({ dept }) => dept);
+  console.log(groupByData);
+
+  const groupBySalary = Object.groupBy(employees, ({ salary }) => {
+    return salary >= 5000 ? "More Then 5000" : "Less Then 5000";
+  });
+  console.log(groupBySalary);
+}
