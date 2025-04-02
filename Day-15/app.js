@@ -481,5 +481,66 @@ console.log(numbers.flat(Infinity)); // [0, 1, 2, 3, 4, 5]
   const anotherNumbers = numbers.with(-2, 10);
   console.log(numbers); // [1, 2, 3, 4, 5, 6]
   console.log(anotherNumbers); // [1, 2, 3, 4, 10, 6]
-  
+}
+
+// Array Like
+{
+  // {key: "value"} // object
+  // [1,2,3] // array
+
+  const arr_like = { 0: "I", 1: "am", 2: "array-like", length: 3 };
+
+  console.log(arr_like);
+
+  arr_like[2]; // 'array-like'
+  arr_like.length; // 3
+
+  console.log("is arr_like is an array?", Array.isArray(arr_like)); // false
+
+  console.log("is arr_like is an object?", arr_like instanceof Object); // true
+
+  function checkArgs() {
+    console.log("Array Like Args", arguments);
+    const argArr = [...arguments];
+    console.log("Converetd Arary Args", argArr);
+    argArr.forEach((elem) => {
+      console.log(elem);
+    });
+  }
+
+  checkArgs(1, 45);
+
+  console.log(
+    "HTML COllection as Array Like",
+    document.getElementsByTagName("li")
+  );
+  const collectionArr = Array.from(document.getElementsByTagName("li"));
+  console.log("Converted Array", collectionArr);
+}
+// fromAsync()
+{
+  const collectionPromise = Array.fromAsync(
+    document.getElementsByTagName("li")
+  );
+  console.log("Converted Array", collectionPromise);
+
+  collectionPromise.then((value) => console.log(value));
+
+  const ret = Array.fromAsync({
+    0: Promise.resolve("tapaScript"),
+    1: Promise.resolve("Google"),
+    2: Promise.resolve("Apple"),
+    length: 3,
+  }).then((value) => console.log(value));
+
+  console.log(ret);
+}
+
+// of()
+{
+  const a = new Array(2, 3, 4); // [2,3,4]
+  const b = [4, 5, 6]; // [4,5,6]
+
+  const c = Array.of(2, true, "test", { name: "Alex" }, [1, 2, 3]);
+  console.log("c", c);
 }
