@@ -794,3 +794,203 @@ console.log(subsNumbers);
 //   return accumulator - currentValue;
 // });
 // console.log(subsNumbers);
+
+{
+  // some () Method :
+
+  let customers = [
+    {
+      id: 1,
+      f_name: "Abby",
+      l_name: "Thomas",
+      gender: "M",
+      married: true,
+      age: 32,
+      expense: 500,
+      purchased: ["Shampoo", "Toys", "Book"],
+    },
+    {
+      id: 2,
+      f_name: "Jerry",
+      l_name: "Tom",
+      gender: "M",
+      married: true,
+      age: 64,
+      expense: 100,
+      purchased: ["Stick", "Blade"],
+    },
+    {
+      id: 3,
+      f_name: "Dianna",
+      l_name: "Cherry",
+      gender: "F",
+      married: true,
+      age: 22,
+      expense: 1500,
+      purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+    },
+    {
+      id: 4,
+      f_name: "Dev",
+      l_name: "Currian",
+      gender: "M",
+      married: true,
+      age: 82,
+      expense: 90,
+      purchased: ["Book"],
+    },
+    {
+      id: 5,
+      f_name: "Maria",
+      l_name: "Gomes",
+      gender: "F",
+      married: false,
+      age: 7,
+      expense: 300,
+      purchased: ["Toys"],
+    },
+  ];
+
+  // some() - Do we have a Young Customer(age less than 10 years)
+
+  // Syntax :
+
+  /*
+Array.some((element, index, array) =>{
+  // code here ....
+})
+*/
+
+  const youngCustomer = customers.some((customer) => {
+    return customer.age > 10;
+  });
+  console.log("Has Young customer(Age < 10):", youngCustomer);
+}
+{
+  // every () Method :
+  let customers = [
+    {
+      id: 1,
+      f_name: "Abby",
+      l_name: "Thomas",
+      gender: "M",
+      married: true,
+      age: 32,
+      expense: 500,
+      purchased: ["Shampoo", "Toys", "Book"],
+    },
+    {
+      id: 2,
+      f_name: "Jerry",
+      l_name: "Tom",
+      gender: "M",
+      married: true,
+      age: 64,
+      expense: 100,
+      purchased: ["Stick", "Blade"],
+    },
+    {
+      id: 3,
+      f_name: "Dianna",
+      l_name: "Cherry",
+      gender: "F",
+      married: true,
+      age: 22,
+      expense: 1500,
+      purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+    },
+    {
+      id: 4,
+      f_name: "Dev",
+      l_name: "Currian",
+      gender: "M",
+      married: true,
+      age: 82,
+      expense: 90,
+      purchased: ["Book"],
+    },
+    {
+      id: 5,
+      f_name: "Maria",
+      l_name: "Gomes",
+      gender: "F",
+      married: false,
+      age: 7,
+      expense: 300,
+      purchased: ["Toys"],
+    },
+  ];
+
+  // every() - Every Customer is Married?
+  // syntax :
+  /*
+    Array.every((currentElement, currentIndex, array) =>{
+      // code  here ...
+    })
+*/
+  const allCustomerMarried = customers.every((customer) => {
+    return customer.married;
+  });
+  console.log("All Customer Married", allCustomerMarried); // false
+}
+
+{
+  // find () Method :
+  let customers = [
+    {
+      id: 1,
+      f_name: "Abby",
+      l_name: "Thomas",
+      gender: "M",
+      married: true,
+      age: 32,
+      expense: 500,
+      purchased: ["Shampoo", "Toys", "Book"],
+    },
+    {
+      id: 2,
+      f_name: "Jerry",
+      l_name: "Tom",
+      gender: "M",
+      married: true,
+      age: 64,
+      expense: 100,
+      purchased: ["Stick", "Blade"],
+    },
+    {
+      id: 3,
+      f_name: "Dianna",
+      l_name: "Cherry",
+      gender: "F",
+      married: true,
+      age: 22,
+      expense: 1500,
+      purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+    },
+    {
+      id: 4,
+      f_name: "Dev",
+      l_name: "Currian",
+      gender: "M",
+      married: true,
+      age: 82,
+      expense: 90,
+      purchased: ["Book"],
+    },
+    {
+      id: 5,
+      f_name: "Maria",
+      l_name: "Gomes",
+      gender: "F",
+      married: false,
+      age: 7,
+      expense: 300,
+      purchased: ["Toys"],
+    },
+  ];
+  const foundYoungCustomer = customers.find((customer) => {
+    return customer.age < 10;
+  });
+
+  console.log(foundYoungCustomer);
+}
