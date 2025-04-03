@@ -689,3 +689,108 @@ console.log(numbers.flat(Infinity)); // [0, 1, 2, 3, 4, 5]
   });
   console.log(customersWithFullName);
 }
+
+{
+  // Reduce ()  Method :
+  let customers = [
+    {
+      id: 1,
+      f_name: "Abby",
+      l_name: "Thomas",
+      gender: "M",
+      married: true,
+      age: 32,
+      expense: 500,
+      purchased: ["Shampoo", "Toys", "Book"],
+    },
+    {
+      id: 2,
+      f_name: "Jerry",
+      l_name: "Tom",
+      gender: "M",
+      married: true,
+      age: 64,
+      expense: 100,
+      purchased: ["Stick", "Blade"],
+    },
+    {
+      id: 3,
+      f_name: "Dianna",
+      l_name: "Cherry",
+      gender: "F",
+      married: true,
+      age: 22,
+      expense: 1500,
+      purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+    },
+    {
+      id: 4,
+      f_name: "Dev",
+      l_name: "Currian",
+      gender: "M",
+      married: true,
+      age: 82,
+      expense: 90,
+      purchased: ["Book"],
+    },
+    {
+      id: 5,
+      f_name: "Maria",
+      l_name: "Gomes",
+      gender: "F",
+      married: false,
+      age: 7,
+      expense: 300,
+      purchased: ["Toys"],
+    },
+  ];
+
+  // syntax
+  /* arr.reduce(
+     reducer(
+       accumulator,
+       currentValue,
+       index,
+       array),
+    initialValue);
+  // A reducer function which is also called as callback function to be called on each element of the array.
+
+    const ret = function reducer(accumulator, currentValue, index, array) {
+        // do something with accumulator and currentvalue
+        // You get a result
+        // You return that result
+    }
+*/
+
+  const numbers = [1, 2, 3, 4, 5];
+  const sumResult = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+  }, 0);
+  console.log(sumResult);
+
+  // ===============================
+  let count = 0;
+  const result = customers.reduce((accumulator, customer) => {
+    if (customer.purchased.includes("Book")) {
+      accumulator = accumulator + customer.age;
+      count++;
+    }
+    return accumulator;
+  }, 0);
+  console.log("Customer avarage Purcased", Math.floor(result / count)); // 45
+}
+
+// reduceRight () Method :
+// reduce
+
+const numbers = [100, 45, 15];
+const subsNumbers = numbers.reduce((accumulator, currentValue) => {
+  return accumulator - currentValue;
+});
+console.log(subsNumbers);
+
+// const numbers = [100, 45, 15];
+// const subsNumbers = numbers.reduceRight((accumulator, currentValue) => {
+//   return accumulator - currentValue;
+// });
+// console.log(subsNumbers);
