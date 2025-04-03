@@ -518,23 +518,23 @@ console.log(numbers.flat(Infinity)); // [0, 1, 2, 3, 4, 5]
   console.log("Converted Array", collectionArr);
 }
 // fromAsync()
-{
-  const collectionPromise = Array.fromAsync(
-    document.getElementsByTagName("li")
-  );
-  console.log("Converted Array", collectionPromise);
+// {
+//   const collectionPromise = Array.fromAsync(
+//     document.getElementsByTagName("li")
+//   );
+//   console.log("Converted Array", collectionPromise);
 
-  collectionPromise.then((value) => console.log(value));
+//   collectionPromise.then((value) => console.log(value));
 
-  const ret = Array.fromAsync({
-    0: Promise.resolve("tapaScript"),
-    1: Promise.resolve("Google"),
-    2: Promise.resolve("Apple"),
-    length: 3,
-  }).then((value) => console.log(value));
+//   const ret = Array.fromAsync({
+//     0: Promise.resolve("tapaScript"),
+//     1: Promise.resolve("Google"),
+//     2: Promise.resolve("Apple"),
+//     length: 3,
+//   }).then((value) => console.log(value));
 
-  console.log(ret);
-}
+//   console.log(ret);
+// }
 
 // of()
 {
@@ -543,4 +543,149 @@ console.log(numbers.flat(Infinity)); // [0, 1, 2, 3, 4, 5]
 
   const c = Array.of(2, true, "test", { name: "Alex" }, [1, 2, 3]);
   console.log("c", c);
+}
+
+{
+  // filter ()  Method :
+  let customers = [
+    {
+      id: 1,
+      f_name: "Abby",
+      l_name: "Thomas",
+      gender: "M",
+      married: true,
+      age: 32,
+      expense: 500,
+      purchased: ["Shampoo", "Toys", "Book"],
+    },
+    {
+      id: 2,
+      f_name: "Jerry",
+      l_name: "Tom",
+      gender: "M",
+      married: true,
+      age: 64,
+      expense: 100,
+      purchased: ["Stick", "Blade"],
+    },
+    {
+      id: 3,
+      f_name: "Dianna",
+      l_name: "Cherry",
+      gender: "F",
+      married: true,
+      age: 22,
+      expense: 1500,
+      purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+    },
+    {
+      id: 4,
+      f_name: "Dev",
+      l_name: "Currian",
+      gender: "M",
+      married: true,
+      age: 82,
+      expense: 90,
+      purchased: ["Book"],
+    },
+    {
+      id: 5,
+      f_name: "Maria",
+      l_name: "Gomes",
+      gender: "F",
+      married: false,
+      age: 7,
+      expense: 300,
+      purchased: ["Toys"],
+    },
+  ];
+
+  // syntax
+  /*
+  const newArray = Array.filter((currentValue, index, array) =>{
+      // Do somthing here ......
+  })
+  */
+
+  const newArray = customers.filter((customer) => {
+    return customer.age >= 60;
+  });
+  console.log(newArray); //  (2) [{…}, {…}]
+}
+
+{
+  // map ()  Method :
+  let customers = [
+    {
+      id: 1,
+      f_name: "Abby",
+      l_name: "Thomas",
+      gender: "M",
+      married: true,
+      age: 32,
+      expense: 500,
+      purchased: ["Shampoo", "Toys", "Book"],
+    },
+    {
+      id: 2,
+      f_name: "Jerry",
+      l_name: "Tom",
+      gender: "M",
+      married: true,
+      age: 64,
+      expense: 100,
+      purchased: ["Stick", "Blade"],
+    },
+    {
+      id: 3,
+      f_name: "Dianna",
+      l_name: "Cherry",
+      gender: "F",
+      married: true,
+      age: 22,
+      expense: 1500,
+      purchased: ["Lipstik", "Nail Polish", "Bag", "Book"],
+    },
+    {
+      id: 4,
+      f_name: "Dev",
+      l_name: "Currian",
+      gender: "M",
+      married: true,
+      age: 82,
+      expense: 90,
+      purchased: ["Book"],
+    },
+    {
+      id: 5,
+      f_name: "Maria",
+      l_name: "Gomes",
+      gender: "F",
+      married: false,
+      age: 7,
+      expense: 300,
+      purchased: ["Toys"],
+    },
+  ];
+
+  // syntax
+  /*
+  const newArray = Array.map((Element, index, array) =>{
+      // Do somthing here ......
+  })
+  */
+
+  const customersWithFullName = customers.map((customer) => {
+    let title = "";
+    if (customer.gender === "M") {
+      title = "Mr";
+    } else if (customer.gender === "F" && customer.married) {
+      title = "Mrs";
+    } else {
+      title = "Miss";
+    }
+    customer["full_name"] = `${title} ${customer.f_name} ${customer.l_name} `;
+    return customer;
+  });
+  console.log(customersWithFullName);
 }
