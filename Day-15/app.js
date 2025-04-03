@@ -1291,3 +1291,61 @@ Array.some((element, index, array) =>{
     }, 0);
   console.log(totalMaridCustomerExpense);
 }
+
+{
+  // forEach () Method :
+  const numbers = [1, 2, 3, 4, 5];
+  let sum = 0;
+  numbers.forEach((element) => {
+    sum = sum + element;
+    // console.log(element);
+  });
+
+  console.log(sum); // 15
+}
+
+{
+  // entries () Method :
+  const numbers = [1, 2, 3, 4, 5];
+  const arrItr = numbers.entries();
+  // console.log(arrItr);
+  for (const [index, value] of arrItr) {
+    console.log(index, value);
+  }
+}
+
+{
+  // values () Method :
+  const numbers = [1, 2, 3, 4, 5];
+  const arrItr2 = numbers.values(numbers);
+  // console.log(arrItr2);
+  for (const values of arrItr2) {
+    console.log(values);
+  }
+}
+
+{
+  // keys () Method :
+  const numbers = [1, 2, 3, 4, 5];
+  const arrIter3 = numbers.keys();
+  // console.log(arrIter3);
+  for (const keys of arrIter3) {
+    console.log(keys); //
+  }
+}
+
+{
+  // flatMap ()  Method :
+  const numbers = [1, 2, 3, 4, 5];
+  const arrayMap = numbers.map((element) => element * 2);
+  console.log(arrayMap); //  flatMap ()  Method :
+  const arrayMap2 = numbers.map((element) => [element * 2]);
+  console.log(arrayMap2); // [Array(1), Array(1), Array(1), Array(1), Array(1)]
+  // flatMap() Method Using
+  const arrayFlat = numbers.flatMap((element) => [element * 2]);
+  console.log(arrayFlat); // [2, 4, 6, 8, 10]
+  const arr_like = numbers.flatMap(
+    (element) => [[[element * 2]]].flat(Infinity) //  [2, 4, 6, 8, 10]
+  );
+  console.log(arr_like);
+}
