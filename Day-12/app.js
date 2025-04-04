@@ -46,5 +46,46 @@ console.log(text);
   const y = new String("Jhon");
   console.log(y); // {'Jhon'}
   console.log(typeof y); // object
+}
+{
+  // JavaScript String charAt()
+  const names = "sonatanpaul";
+  console.log(names); // sonatanpaul
+  console.log(names.charAt(0)); // s
+  console.log(names.charAt(1)); // o
+  console.log(names.charAt(2)); // n
+  console.log(names.charAt(3)); // a
+  console.log(names.charAt(4)); //  t
+  console.log(names.charAt(5)); // a
+  console.log(names.charAt(6)); // n
+}
+{
+  // JavaScript String at()
+  const text = "Hello World";
+  console.log(text.at(0)); // H
+  console.log(text.at(1)); // e
+  console.log(text.at(2)); // l
+  console.log(text.at(3)); // l
+  console.log(text.at(4)); // o
+  console.log(text.at(-1)); //d
+  console.log(text.at(-2)); // l
+  console.log(text.at(-3)); // r
+  console.log(text.at(-4)); // o
+  console.log(text.at(-5)); // W
+}
 
+{
+  const text = "sonatanpaul";
+  for (let i = text.length - 1; i >= 0; i--) {
+    console.log(text.at(i), text[i], text.charAt(i), i);
+  }
+}
+
+{
+  // Property Access [ ]
+  const text = "sonatan";
+  const s = text[0];
+  console.log(s); //
+  const o = text[1];
+  console.log(o); // o
 }
